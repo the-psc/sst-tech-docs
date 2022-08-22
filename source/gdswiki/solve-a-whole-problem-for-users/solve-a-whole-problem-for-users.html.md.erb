@@ -19,7 +19,7 @@ Work towards creating a service that solves a whole problem for users, working w
 * In general the software has been developed relatively cheaply and should provide a unique selling point to the UK licensing authority
 * Sharing data on satellite activeness and manoeuvrability raised some liability concerns (for example, would the UKSA be liable for operators moving satellites as a result of this information, which could be incorrect?) and so we consulted UKSA lawyers on the implications of sharing this data. Therefore a disclaimer is included in the terms and conditions for users stating that the UKSA is not responsible for any actions taken based on data shared.
 * Sharing Space-Track data via our service required a data sharing agreement with the 18th Space Squadron. This is complete, and we have also reached a data sharing agreement with complimentary data source, ESA DISCOS.
-* Some users of the service require special accesses to enable them to access the website when in high-security environments. For example, in some locations, they cannot use their mobiles, so two factor authentication using mobiles could not exclusively be used. Therefore, magic link tokens were used to provide website access.
+* Some users of the service require special accesses to enable them to access the website when in high-security environments. For example, in some locations, they cannot use their mobiles, so two factor authentication using mobiles could not exclusively be used. Therefore, magic link tokens were used to provide website access (not relevant anymore right?).
 
 ### Make sure services are [scoped according to how users think and what they need to do](https://www.gov.uk/service-manual/design/scoping-your-service)- not too narrow or too broad
 
@@ -35,7 +35,7 @@ Work towards creating a service that solves a whole problem for users, working w
 * It was highlighted during the Alpha phase that conjunction event analysis is most useful when completed using the operator’s ephemeris data. Therefore, we can ingest ephemeris data and provide analysis on how their planned actions will affect Probability of Collision - this provides a link between the data provided by Space-Track and the effectiveness of an operators response (*completes user journey*).
 * Monitor your satellites is not really a transactional service: the key output is broadcasting analysis which is already being done to those who are paying for it but not receiving it.
   * There is a small transactional element in operators uploading ephemeris data but this is not necessary to the service
-* We have aimed to make our private beta url similar to it’s aspired public one:
+* The private beta URL is similar to its current public one:
   * Private beta: monitor-your-satellites.space
   * Public beta: monitor-your-satellites.service.gov.uk
 * Our API allows us to integrate better with many of our users
@@ -50,6 +50,7 @@ Several organisations are part of the journey in its current scope:
 * Space-Track - data sharing agreement
 * UKSA orbital analysis team - providing analysis for users
 * UKSA SST team - acting as admins for the service
+* ESA DISCOS - data sharing agreement
 * GDS/BEIS team - ensure we meet service standards
 
 The journey can be longer in future to include eg CNI users, academics, insurers and the other groups covered above.
@@ -70,7 +71,7 @@ The journey can be longer in future to include eg CNI users, academics, insurers
 * We have set-up this live tech docs site that contains information on service design, key design decisions and architecture. All design documents are available and directly shared with the UKSA team.
 * In addition, the data catalogue/user research notes/service requirements are all shared on UKSA SharePoint.
 * By working in an agile way and as transparently as possible through inviting clients and stakeholders to daily and weekly agile ceremonies, we ensure that everyone is on-the-same-page and clear on our progress and decisions. We also schedule regular Show and Tells with wider stakeholders.
-* The work has been presented at conferences by UKSA staff and also covered in the Daily Express online
+* The work has been presented at conferences (e.g Farnborough International Airshow 2022) by UKSA staff and also covered in the Daily Express online
 * Emily Mills and Phil Buckley have podcasted on the subject
 * The system has been blogged about by UKSA and The PSC staff
 
